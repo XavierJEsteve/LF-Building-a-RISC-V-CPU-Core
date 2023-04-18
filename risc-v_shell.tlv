@@ -40,13 +40,15 @@
    m4_makerchip_module   // (Expanded in Nav-TLV pane.)
    /* verilator lint_on WIDTH */
 \TLV
-   
+   // hello?
    $reset = *reset;
    
    
    // YOUR CODE HERE
    // ...
-   
+   // Program counter
+   $next_pc[31:0] = $reset ? 32'b0 : (1 + $pc[31:0]);
+   $pc[31:0] = (>>1$next_pc);
    
    // Assert these to end simulation (before Makerchip cycle limit).
    *passed = 1'b0;
