@@ -1,29 +1,31 @@
 # Building a RISC-V CPU Core
 
+The purpose of this repository is to demonstrate some of my understanding of the RISC-V ISA, starting with RISCV 32I. The makerchip IDE and some guidance were provided by the owner of the repo I've forked, stevehoover/LF-Building-a-RISC-V-CPU-Core. I found the course to be worthwhile, making me refer to my RISC-V texts (The RISC-V Reader) as well as pushing me to re-enter the world of HDL in a sleeker web-based IDE than I'm used to. TL-Verilog is a cool effort by the Redwood EDA team to make prototyping FPGA designs easier while I'm working from a macbook. Highly recommend giving both the course and the IDE a chance if you have previous experience or interest in this area of programming.
+
 Accompanying resources for the [Building a RISC-V CPU Core](https://www.edx.org/course/building-a-risc-v-cpu-core) [EdX](https://edx.org/) course by [Steve Hoover](https://www.linkedin.com/in/steve-hoover-a44b607/) of [Redwood EDA, LLC](https://redwoodeda.com), [Linux Foundation](https://www.linuxfoundation.org/), and [RISC-V International](https://riscv.org).
 
 ![VIZ](LF_VIZ.png)
 
-## Welcome
+## Getting Started
 
-To get started, install the makerchip ide using python via 
+- Clone repo
+
+- Install the makerchip ide using python via 
 
 ```bash
 pip3 install makerchip-ide
+```
+
+- Launch makerchip ide in your browser
+```bash
 makerchip <filename>.tlv
 ```
 
-At this time, there are no course corrections or platform issues to report. Please do let us know within the EdX platform if anything gets in your way. There's a great deal of infrastructure to maintain for the course, and we aim to keep it all running smoothly. Now, back to EdX.
-
-## RISC-V Starting-Point Code
-
-Here's a pre-built logic diagram of the final CPU. Ctrl-click here to [explore in its own tab](https://raw.githubusercontent.com/stevehoover/LF-Building-a-RISC-V-CPU-Core/main/lib/riscv.svg).
-
+### Final Core
 ![Final Core](lib/riscv.svg)
 
 
-Congratulations!!!
 
-After completing this course, we hope you are inspired to continue your journey. These ideas might help:
+After completing this course, consider visiting the following.
   - Try the tutorials in [Makerchip](https://makerchip.com).
   - Learn more about [TL-Verilog](https://redwoodeda.com/tl-verilog).
